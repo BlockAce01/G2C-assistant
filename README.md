@@ -1,1 +1,1 @@
-# G2C-assistant
+#Integrated Government Service Registry (IGSR)
