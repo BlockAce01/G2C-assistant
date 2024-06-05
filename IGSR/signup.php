@@ -118,20 +118,158 @@ function updateDSO() {
     var dsdivision = document.getElementById("dsdivision");
     dsdivision.innerHTML = ""; // Clear previous options
 
-    if (district === "Ampara") {
-        var options = [
-            "Addalachchenai",
-            "Akkaraipattu",
-            "Ampara",
-            // Add more DSO options for Ampara district
-        ];
-    } else if (district === "Anuradhapura") {
-        var options = [
-            "Anuradhapura East",
-            "Anuradhapura West",
-            // Add more DSO options for Anuradhapura district
-        ];
-    }
+    if (district === "Kandy") {
+    options = [
+      "Akurana", "Delthota", "Doluwa", "Gangawata Korale", "Ganga Ihala Korale", 
+      "Harispattuwa", "Hatharaliyadda", "Kundasale", "Medadumbara", "Minipe", 
+      "Panvila", "Pasbage Korale", "Pathadumbara", "Pathahewaheta", "Poojapitiya", 
+      "Thumpane", "Udadumbara", "Udapalatha", "Udunuwara", "Yatinuwara"
+    ];
+  } else if (district === "Matale") {
+    options = [
+      "Ambanganga Korale", "Dambulla", "Galewela", "Laggala-Pallegama", "Matale", 
+      "Naula", "Pallepola", "Rattota", "Ukuwela", "Wilgamuwa", "Yatawatta"
+    ];
+  } else if (district === "Nuwara Eliya") {
+    options = [
+      "Ambagamuwa", "Hanguranketha", "Kothmale", "Nuwara Eliya", "Walapane", 
+      "Norwood", "Kothmale West", "Nildandahinna", "Thalawakale", "Mathurata"
+    ];
+  } else if (district === "Ampara") {
+    options = [
+      "Addalachchenai", "Akkaraipattu", "Alayadiwembu", "Ampara", "Damana", 
+      "Dehiattakandiya", "Eragama", "Kalmunai Muslim", "Kalmunai Tamil", 
+      "Karaitivu", "Lahugala", "Mahaoya", "Navithanveli", "Ninthavur", 
+      "Padiyathalawa", "Pothuvil", "Sainthamarathu", "Samanthurai", "Thirukkovil", 
+      "Uhana"
+    ];
+  } else if (district === "Batticaloa") {
+    options = [
+      "Eravur Pattu", "Eravur Town", "Kattankudy", "Koralai Pattu", 
+      "Koralai Pattu Central", "Koralai Pattu North", "Koralai Pattu South", 
+      "Koralai Pattu West", "Manmunai North", "Manmunai Pattu", 
+      "Manmunai S. and Eruvil Pattu", "Manmunai South West", "Manmunai West", 
+      "Porativu Pattu"
+    ];
+  } else if (district === "Trincomalee") {
+    options = [
+      "Gomarankadawala", "Kantalai", "Kinniya", "Kuchchaveli", "Morawewa", 
+      "Muttur", "Padavi Sri Pura", "Seruvila", "Thambalagamuwa", "Trincomalee", 
+      "Verugal"
+    ];
+  } else if (district === "Anuradhapura") {
+    options = [
+      "Galnewa", "Galenbindunuwewa", "Horowpothana", "Ipalogama", "Kahatagasdigiliya", 
+      "Kebithigollewa", "Kekirawa", "Mahavilachchiya", "Medawachchiya", "Mihinthale", 
+      "Nachchadoowa", "Nochchiyagama", "Nuwaragam Palatha Central", "Nuwaragam Palatha East", 
+      "Padaviya", "Palagala", "Palugaswewa", "Rajanganaya", "Rambewa", "Thalawa", 
+      "Thambuttegama", "Thirappane"
+    ];
+  } else if (district === "Polonnaruwa") {
+    options = [
+      "Dimbulagala", "Elahera", "Hingurakgoda", "Lankapura", "Medirigiriya", 
+      "Thamankaduwa", "Welikanda"
+    ];
+  } else if (district === "Galle") {
+    options = [
+      "Akmeemana", "Ambalangoda", "Baddegama", "Balapitiya", "Bentota", 
+      "Bope-Poddala", "Elpitiya", "Galle Four Gravets", "Gonapinuwala", 
+      "Habaraduwa", "Hikkaduwa", "Imaduwa", "Karandeniya", "Nagoda", 
+      "Niyagama", "Neluwa", "Thawalama", "Welivitiya-Divithura", "Yakkalamulla"
+    ];
+  } else if (district === "Matara") {
+    options = [
+      "Athuraliya", "Akurassa", "Devinuwara", "Dickwella", "Hakmana", 
+      "Kamburupitiya", "Kirinda Puhulwella", "Kotapola", "Malimbada", 
+      "Matara Four Gravets", "Mulatiyana", "Pasgoda", "Pitabeddara", 
+      "Thihagoda", "Weligama", "Welipitiya"
+    ];
+  } else if (district === "Hambantota") {
+    options = [
+      "Ambalantota", "Angunakolapelessa", "Beliatta", "Hambantota", 
+      "Katuwana", "Lunugamvehera", "Okewela", "Sooriyawewa", "Tangalle", 
+      "Tissamaharama", "Weeraketiya"
+    ];
+  } else if (district === "Jaffna") {
+    options = [
+      "Chankanai", "Chavakachcheri", "Delft", "Island North", "Island South", 
+      "Jaffna", "Karainagar", "Nallur", "Point Pedro", "Sandilipay", "Tellippalai", 
+      "Uduvil", "Velanai"
+    ];
+  } else if (district === "Kilinochchi") {
+    options = [
+      "Karachchi", "Kandawalai", "Pachchilaipalli", "Poonakary"
+    ];
+  } else if (district === "Mannar") {
+    options = [
+      "Mannar", "Madhu", "Manthai West", "Musalai", "Nanaddan"
+    ];
+  } else if (district === "Vavuniya") {
+    options = [
+      "Vavuniya", "Vavuniya North", "Vavuniya South", "Venkalacheddikulam"
+    ];
+  } else if (district === "Mullaitivu") {
+    options = [
+      "Maritimepattu", "Oddusuddan", "Puthukudiyiruppu", "Thunukkai", "Welioya"
+    ];
+  } else if (district === "Kurunegala") {
+    options = [
+      "Alawwa", "Ambanpola", "Bamunakotuwa", "Bingiriya", "Ehetuwewa", 
+      "Galgamuwa", "Ganewatta", "Giribawa", "Ibbagamuwa", "Katupotha", 
+      "Kobeigane", "Kotavehera", "Kuliyapitiya East", "Kuliyapitiya West", 
+      "Kurunegala", "Maho", "Maspotha", "Mawathagama", "Narammala", "Panduwasnuwara", 
+      "Polgahawela", "Pothuheara", "Rasnayakapura", "Rideegama", "Udubaddawa", 
+      "Wariyapola", "Weerambugedara"
+    ];
+  } else if (district === "Puttalam") {
+    options = [
+      "Anamaduwa", "Arachchikattuwa", "Chillaw", "Dankotuwa", "Kalpitiya", 
+      "Karuwalagaswewa", "Mahakumbukkadawala", "Mundel", "Nattandiya", 
+      "Nawagaththegama", "Pallama", "Puttalam", "Vanathavilluwa", "Wennappuwa"
+    ];
+  } else if (district === "Colombo") {
+    options = [
+      "Colombo", "Dehiwala", "Homagama", "Kaduwela", "Kesbewa", 
+      "Kolonnawa", "Maharagama", "Moratuwa", "Padukka", "Ratmalana", 
+      "Seethawaka", "Sri Jayawardanapura Kotte", "Thimbirigasyaya"
+    ];
+  } else if (district === "Gampaha") {
+    options = [
+      "Attanagalla", "Biyagama", "Divulapitiya", "Dompe", "Gampaha", 
+      "Ja-Ela", "Katana", "Kelaniya", "Mahara", "Minuwangoda", 
+      "Mirigama", "Negombo", "Wattala"
+    ];
+  } else if (district === "Kalutara") {
+    options = [
+      "Agalawatta", "Bandaragama", "Beruwala", "Bulathsinhala", "Dodangoda", 
+      "Horana", "Ingiriya", "Kalutara", "Madurawala", "Matugama", 
+      "Millaniya", "Palindanuwara", "Panadura", "Walallawita"
+    ];
+  } else if (district === "Kegalle") {
+    options = [
+      "Aranayaka", "Bulathkohupitiya", "Dehiowita", "Deraniyagala", 
+      "Galigamuwa", "Kegalle", "Mawanella", "Rambukkana", "Ruwanwella", 
+      "Warakapola", "Yatiyanthota"
+    ];
+  } else if (district === "Ratnapura") {
+    options = [
+      "Balangoda", "Eheliyagoda", "Elapatha", "Embilipitiya", "Godakawela", 
+      "Imbulpe", "Kalawana", "Kiriella", "Kuruwita", "Kolonna", 
+      "Nivithigala", "Opanayake", "Pelmadulla", "Ratnapura", "Weligepola"
+    ];
+  } else if (district === "Badulla") {
+    options = [
+      "Badulla", "Bandarawela", "Ella", "Hali Ela", "Haputale", 
+      "Lunugala", "Mahiyanganaya", "Meegahakiula", "Passara", "Soranathota", 
+      "Uva-Paranagama", "Welimada", "Wiyaluwa"
+    ];
+  } else if (district === "Monaragala") {
+    options = [
+      "Badalkumbura", "Bibile", "Buttala", "Kataragama", "Madulla", 
+      "Medagama", "Monaragala", "Sevanagala", "Siyambalanduwa", "Thanamalwila", 
+      "Wellawaya"
+    ];
+  }
     // Add else-if blocks for all 25 districts with respective DSO options
 
     // Add options to the select element
