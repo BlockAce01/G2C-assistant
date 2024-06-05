@@ -14,9 +14,9 @@
     </div>
     <div class="navigation">
           <a href="index.php">Home</a>
-          <a href="/IGSR/index.php#service">Services</a>
-          <a href="/IGSR/index.php#About">About us</a>
-          <a href="/IGSR/index.php#Contact">Contact</a>
+          <a href="/index.php#service">Services</a>
+          <a href="/index.php#About">About us</a>
+          <a href="/index.php#Contact">Contact</a>
     </div>
     <div class="notific">
       <a href="#"><img src="images/bell.png"></a>
@@ -97,9 +97,9 @@
       <hr id="dropmenu-line-T">
       <div class="nav-dropDown-menu">
         <a href="index.php">Home</a>
-        <a href="/IGSR/index.php#service">Services</a>
-        <a href="/IGSR/index.php#About">About us</a>
-        <a href="/IGSR/index.php#Contact">Contact</a>
+        <a href="/index.php#service">Services</a>
+        <a href="/index.php#About">About us</a>
+        <a href="/index.php#Contact">Contact</a>
       </div>
       <hr id="dropmenu-line-B">
       <div class="signbtn-dropdwn">

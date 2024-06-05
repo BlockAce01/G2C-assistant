@@ -34,28 +34,28 @@ nofiticationBox.addEventListener("click", (event) => {
 
 document.addEventListener("DOMContentLoaded", function() {
     const allowedPathsSignIn = [
-        "/IGSR/",
-        "/IGSR/index.php",
-        "/IGSR/signup.php",
+        "/",
+        "/index.php",
+        "/signup.php",
     ];
     const allowedPathsSignUp = [
-        "/IGSR/signinOfficer.php",
-        "/IGSR/signin.php",
+        "/signinOfficer.php",
+        "/signin.php",
     ];
     const allowedPathsCitizenProfileIcn = [
-        "/IGSR/service1.php",
-        "/IGSR/service2.php",
-        "/IGSR/service3.php",
-        "/IGSR/service4.php",
-        "/IGSR/service5.php",
-        "/IGSR/service6.php",
-        "/IGSR/service7.php",
-        "/IGSR/service8.php",
-        "/IGSR/citizenProfile.php",
+        "/service1.php",
+        "/service2.php",
+        "/service3.php",
+        "/service4.php",
+        "/service5.php",
+        "/service6.php",
+        "/service7.php",
+        "/service8.php",
+        "/citizenProfile.php",
     ];
     const allowedPathsOfficerProfileIcn = [
-        "/IGSR/officerProfile.php",
-        "/IGSR/service.php",
+        "/officerProfile.php",
+        "/service.php",
     ];
 
     const currentPath = window.location.pathname;
