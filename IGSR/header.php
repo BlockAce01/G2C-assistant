@@ -111,3 +111,19 @@
   </header>
   <script src="script.js"></script>
 </body>
+=======
+  <header>
+    <div class="logo">
+      <img src="images\logo.png">
+    </div>
+    <nav class="navigation">
+          <a href="index.php">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <button><a href="signin.php" class="signin">Sign In</a></button>
+          <a href="#"><img src="images/bell.png"></a>
+    </nav>
+  </header>
+</body>
+</html>
