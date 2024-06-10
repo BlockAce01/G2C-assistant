@@ -6,7 +6,7 @@ if (isset($_POST["submit"])) {
   $NIC_Number = $_POST["nic"];
   $Phone_Number = $_POST["pnumber"];
   $District = $_POST["district"];
-  $DS_Divition = $_POST["dsdivition"];
+  $DS_Divition = $_POST["dsdivision"];
   $Password = $_POST["password"];
   $RePassword = $_POST["repassword"];
 

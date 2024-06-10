@@ -36,10 +36,20 @@
               <input type="text" name="nic" class="input-field" placeholder="NIC Number">
           </div>
           <div class="input-box">
-              <i class="bx bxs-user"></i>
+              <i class="bx bxs-phone"></i>
               <input type="number" name="pnumber" class="input-field" placeholder="Phone Number">
           </div>
         </div>
+        <div class="two-forms">
+        <div class="input-box">
+          <i class="bx bxs-home"></i>
+          <input type="text" name="Adders" class="input-field" placeholder="Address">
+        </div>
+        <div class="input-box">
+          <i class="bx bxs-user"></i>
+          <input type="text" name="dob" class="input-field" placeholder="Date of birth">
+        </div>
+      </div>
 
         <div class="regi-head">
           <h2>Divitional Secretariat Office</h2>
@@ -47,7 +57,7 @@
 
         <div class="two-forms">
           <div class="input-box">
-              <i class="bx bxs-user"></i>
+              <i class="bx bxs-location-plus"></i>
               <select name="district" class="input-field" id="district" onchange="updateDSO()">
                <option value="" selected disabled>Select District</option>
                <option value="Ampara">Ampara</option>
@@ -78,7 +88,7 @@
            </select>
           </div>
           <div class="input-box">
-              <i class="bx bxs-user"></i>
+              <i class="bx bxs-location-plus"></i>
               <select name="dsdivision" class="input-field" id="dsdivision">
                 <option value="" selected disabled>Select DS Division</option>
                 <!-- DSO options will be updated dynamically based on district selection -->
