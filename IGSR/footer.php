@@ -1,4 +1,6 @@
 <div class="footer">
-        <p>Design by Visioneers</p>
-        <p>©: Copyright Visioneers. All Rights Reserved</p>
-</div>
+        <p></p>
+        <p>© Designed by Visioneers.2024 All Rights Reserved.</p>
+  </div>
+</body>
+</html>
