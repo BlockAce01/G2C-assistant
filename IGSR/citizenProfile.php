@@ -15,7 +15,7 @@
   <div class="wrapper">
     <div class="section" style="width: 70%;">
       <form style="width: 95%;">
-        <img src="images/profile.png">
+        <img src="images/user.png">
         <h1>ABC Sumanapala</h1>
 
         <div class="profile-list">
