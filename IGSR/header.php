@@ -90,8 +90,8 @@
           <img src="images/officer.png" alt="officer-icon">
         </a>
         <div class="profile-details">
-          <h5>WTY Kavinda</h5>
-          <span>ID:2003245556</span>
+          <h5>ABC Darmapala</h5>
+          <span>ID:2000245556</span>
         </div>
       </div>
       <hr id="dropmenu-line-T">
@@ -110,20 +110,5 @@
     </div>
   </header>
   <script src="script.js"></script>
-</body>
-=======
-  <header>
-    <div class="logo">
-      <img src="images\logo.png">
-    </div>
-    <nav class="navigation">
-          <a href="index.php">Home</a>
-          <a href="#">Services</a>
-          <a href="#">About us</a>
-          <a href="#">Contact</a>
-          <button><a href="signin.php" class="signin">Sign In</a></button>
-          <a href="#"><img src="images/bell.png"></a>
-    </nav>
-  </header>
 </body>
 </html>
