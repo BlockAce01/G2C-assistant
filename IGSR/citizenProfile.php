@@ -16,7 +16,6 @@
         <div class="profile-section-main">
           <img src="/images/userProfile.png" alt="user">
           <h2>ABC Sumanapala</h2>
-        </div>
         <div class="profile-section-secondary">
           <div class="column">
             <div class="userDetail-bar">

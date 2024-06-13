@@ -7,55 +7,53 @@
 <div class="wrapper">
 
     <div class="section" id="slide-box">
-
-        <div class="slider-wrapper">
-          <div class="slider">
-            <img src="images\Sri_Lanka_divisions.png" id="slide-1" >
-            <img src="images\Important-Announcement.png" id="slide-2">
-            <img src="images\available-now.jpg" id="slide-3">
-          </div>
-          <div class="slider-nav">
-            <a href="#silde-1"></a>
-            <a href="#silde-2"></a> 
-            <a href="#silde-3"></a> 
-          </div>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img src="images/gov.jpg" class="slide" id="slide-1">
+          <img src="images/Important-Announcement.png" class="slide" id="slide-2">
+          <img src="images/available-now.jpg" class="slide" id="slide-3">
         </div>
-
-        <div class="section" id="latest-box">
-          <h3 class="button-topic">Latest updates</h3>
-          <div class="updates">
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-          </div>
+        <div class="slider-nav">
+          <a href="#slide-1" class="nav-link"></a>
+          <a href="#slide-2" class="nav-link"></a>
+          <a href="#slide-3" class="nav-link"></a>
         </div>
+      </div>
+      <div class="section" id="latest-box">
+        <h3 class="button-topic">Latest updates</h3>
+        <div class="updates">
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+        </div>
+      </div>
     </div>
     <!--end of 1st section-->
 
