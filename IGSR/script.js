@@ -2,16 +2,33 @@
 const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".navigation");
 const dropDownMenu = document.querySelector(".dropdownMenu");
-
 const bellButton = document.querySelector(".notific");
 const nofiticationBox = document.querySelector(".notification-box");
 
 menuBtn.addEventListener("click", (event) => {
-    event.stopPropagation();
+    event.stopPropagation(); 
     menuBtn.classList.toggle("active");
     navigation.classList.toggle("active");
     dropDownMenu.classList.toggle("active");
 });
+
+//service drop down -start
+const serviceBtn = document.querySelector(".service-btn");
+const serviceBox = document.querySelector(".service-box");
+
+serviceBtn.addEventListener("click", (event) => {
+    event.stopPropagation(); 
+    serviceBox.classList.toggle("active");
+});
+
+document.body.addEventListener("click", () => {
+    serviceBox.classList.remove("active");
+});
+
+serviceBox.addEventListener("click", (event) => {
+    event.stopPropagation(); 
+});
+//service drop down -end
 
 const body = document.querySelector("body");
 
