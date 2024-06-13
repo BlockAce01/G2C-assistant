@@ -14,7 +14,7 @@
     <div class="section">
       <div class="profile-details">
         <div class="profile-section-main">
-          <img src="/images/userProfile.png" alt="user">
+          <img src="/IGSR/images/userProfile.png" alt="user">
           <h2>ABC Sumanapala</h2>
         </div>
         <div class="profile-section-secondary">
