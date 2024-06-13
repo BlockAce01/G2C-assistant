@@ -79,6 +79,7 @@ header .logo img:hover{
 
 /*menu items*/
 header .navigation{
+  position: relative;
   margin-right: 10px;
   width: 60%;
   max-width: 520px;
@@ -190,7 +191,7 @@ header .navigation a:hover{
   max-width: 10%;
   min-width: fit-content;
 }
-.profile-login-btn .sign-btn{
+.sign-btn{
   padding: 3px 15px;
   background: transparent;
   border: 3px solid rgba(206, 138, 33, 1);
@@ -386,6 +387,29 @@ hr{
 
 
   /*slide show*/
+  .slider-wrapper {
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for the slider */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set a fixed height for the slider */
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire slider area */
+    display: none; /* Hide all slides initially */
+  }
+  
+  .slide:first-child {
+    display: block; /* Show the first slide */
+  }
 #slide-box{
   flex-direction: row;
   align-items: flex-start;
@@ -410,7 +434,6 @@ hr{
   align-items: flex-start;
   justify-content: center;
   border-radius: 20px;
-
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.473);
 
 }
@@ -444,8 +467,9 @@ hr{
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
-.slider-nav a:hover{
-  transform: scale(1.2);
+.slider-nav a:hover ,
+.slider-nav a.active  {
+  transform: scale(1.5);
 }
 .button-topic{
   width: 100%;
@@ -567,7 +591,8 @@ hr{
     flex-direction: column;
   }
   .wrapper{
-    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .topic-hp{
     font-size: 25px;
@@ -605,219 +630,285 @@ hr{
 /*--------------------start of signup &login page design------------------------------------------------------*/
 
 
-
-  /*slide show*/
-#slide-box{
-  flex-direction: row;
-  align-items: flex-start;
+.section form{
+  width: 85%;
+  margin: auto;
 }
-#latest-box{
-  height: 400px;
-  min-height: 287px;
+
+.section form img{
+  margin: auto;
+}
+
+.regi-head{
+  padding-top: 20px;
+  border-bottom:solid 2px black;
+}
+
+.regi-head h2{
+  text-align: left;
+  margin-top: 0px;
+}
+
+.two-forms{
+  display: flex;
+  gap: 10px;
+}
+
+.two-forms img{
+  width: 60%;
+}
+
+.input-box{
   position: relative;
-  justify-self: center;
-  align-items: center;
-  max-width: 40rem;
-  min-width: 10rem;
-  margin-bottom: 0;
+  width:100%;
+  height: 50px;
+  display:flex;
+  margin:30px auto;
 }
-.slider-wrapper{
-  position: relative;
-  max-width: 45rem;
-  min-width: 10rem;
-  margin-right: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  border-radius: 20px;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.473);
 
-}
-.slider{
-  display: flex;
-  aspect-ratio: 16/9;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  border-radius: 20px;
-  border: 3px solid #106a5f;
+.input-box input{
   width: 100%;
-}
-.slider img{
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-}
-.slider-nav{
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 1.25rem;
-  z-index: 1;
-  margin: 0 auto;
-}
-.slider-nav a{
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  background-color: #106a5f;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-.slider-nav a:hover{
-  transform: scale(1.2);
-}
-.button-topic{
-  width: 100%;
-  max-width: 400px;
-  min-width: fit-content;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 20px;
-  background-color: #106a5f;
-  padding: 6px 15px;
-  margin: 0 auto 10px auto;
-}
-.updates{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-.updates .A-notification{
-  width: 100%;  
-  margin: 5px 8px;
-  border: 3px solid rgba(0, 0, 0, 0.222);
-  background: #ffffff8f;
-  border-radius: 10px ;
-  padding: 7px 10px;
-  display: flex;
-  flex-direction: column;
-  transition: 0.1s;
-
-}
-.updates .A-notification:hover{
-  backdrop-filter: blur(5px);
-  cursor: pointer;
-}
-.updates .A-notification .notification-content{
-  font-weight: 600;
-  font-size: 17px;
-  margin-bottom: 5px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  background-color: #ffffffd2;
+  border-radius: 40px;
+  font-size: 16px;
   color: #000000;
+  padding: 20px 45px 20px 50px;
+}
+.input-box input::placeholder{
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.updates .A-notification .time-stamp{
-  font-size: 10px;
-  margin-bottom: 3px;
-  align-self: flex-end;
-  color: #4b4b4b;
+.input-box i{
+  font-size: 500;
+  position: absolute;    
+  margin: 15px 10px;
+}
+
+select{
+  width:100%;
+  height: 100%;
+  float: inline-start;
+  height:40px;
+  margin:5px auto;
+  padding:0 0 0 40px;
+  background-color: #ffffffbd;
+  border-radius:25px;
+  border:none;
+}
+
+.btn{
+  width: 40%;
+  margin: 10px auto;
+  top: 0;
+  padding: 10px;
+  height: 45px;
+  background: rgba(206, 138, 33, 1);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
   font-weight: 600;
 }
 
-
-/*sections topic*/
-.topic-hp{
-  font-size: 40px;
-  font-weight: 700;
-  margin: 0 5px 10px 5px;
+.btn:hover{
+  background-color: rgba(255, 255, 255, 1);
+  border: solid rgba(206, 138, 33, 1);
+  color: rgba(206, 138, 33, 1);
 }
 
-/*3rd section Home-page*/
 
-.center ul li {
-  width: 235px;
-  height: 120px;
-  float: inline-start;
-  align-content: center;
-  border-radius: 10px;
-  background-color: rgba(16, 106, 95, 1);
-  box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.473);
-  justify-items: center;
+/*----login page some point-----------*/
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+  accent-color: #fff;
+  margin-right: 3px;
+
+}
+.remember-forgot a{
+  color: #3050b8b6;
+  text-decoration: none;
+
+}
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.wrapper .register-link{
+  font-size: 14.5px;
   text-align: center;
-  margin: 10px;
-  padding: 20px;
+  margin: 20px 0 15px;
+
+}
+.register-link p a{
+  color: rgba(20, 30, 135, 1);
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+/*--------------end of singup and login page design------------------------------*/
+
+/* Service drop down list */
+header .navigation .service-box {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position it below the service button */
+  background-color: rgba(255, 255, 255, 0.127);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: max-content;
+  padding: 7px;
+  border-radius: 20px;
+  border: 3px solid #ce8a21;
+  backdrop-filter: blur(10px);
+}
+header .navigation .service-box.active{
+  display: flex;
+}
+
+header .navigation .service-box ul {
   list-style: none;
-  font-size: 1rem;
-  color: rgba(217, 217, 217, 1);
-  border: solid rgba(16, 106, 95, 1);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .navigation .service-box li {
+  text-align: center;
+  padding: 8px 16px;
   transition: 0.3s ease;
 }
-.center ul a li:hover{
-  font-weight: 800;
-  color: rgba(16, 106, 95, 1);
+
+header .navigation .service-box li a:hover {
+  text-decoration: none;
   background-color: transparent;
-  border-color: #106a5f;
+  padding: 0px;
 }
-.center p{
-  font-size: 22px;
+
+header .navigation .service-box li:hover {
+  background-color: #ce8a21;
+  color:  #ffffff;
+  border-radius: 20px;
+}
+
+/*profile-page style*/
+.profile-details{
   width: 100%;
 }
-@media(max-width: 870px){
-  .center p{
-    font-size: 18px;
-  }
-  .topic-hp{
-    font-size: 30px;
-  }
+.profile-details .profile-section-main img{
+  max-width: 100px;
+  width: 20%;
+  min-width: 30px;
 }
-@media(max-width: 550px){
-  .center p{
-    font-size: 15px;
-  }
-  .topic-hp{
-    font-size: 25px;
-  }
-  
+.profile-details .profile-section-main h2{
+  font-size: 1.5rem;
 }
-
-/*Responsive home*/
-@media(max-width: 868px){
-  .slider-wrapper{
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin: 8px auto;
-  }
-  #slide-box{
-    flex-direction: column;
-  }
-  .wrapper{
-    padding: 10px 15px;
-  }
-  .topic-hp{
-    font-size: 25px;
-  }
+.profile-details .profile-section-secondary{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
 }
-
-@media(max-width: 600px){
-  .section{
-    padding: 12px;
-  }
-  .topic-hp{
-    font-size: 25px;
-  }
+.profile-details .profile-section-secondary .column{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
-
-/*Footer*/
-.footer{
-  clear: both;
-  position: relative;
+.profile-details .profile-section-secondary .column .userDetail-bar{
+  justify-content: flex-end;
+  padding: 10px 12px;
+  margin: 15px auto;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+}
+.profile-details .profile-section-secondary .column .userDetail-bar h4{
+  font-size: 1.4rem;
+  font-weight: 600; 
+  width: 30%;
   text-align: center;
-  margin: 20px;
-  bottom: 0;
 }
-@media(max-width: 870px){
-  .footer p{
-    font-size: 20px;
+.profile-details .profile-section-secondary .column .userDetail-bar b{
+  font-size: 1.5rem;
+  width: 10%;
+}
+.profile-details .profile-section-secondary .column .userDetail-bar p{
+  text-align: left;
+  font-size: 1.4rem;
+  width: 60%;
+}
+.profile-details .btn-section{
+  margin-top: 50px;
+}
+.signbtn{
+  padding: 6px 20px;
+  border: 3px solid rgba(206, 138, 33, 1);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 550;
+  transition: 0.2s;
+  background-color: #ce8a21;
+  color: #ffffff;
+}
+.signbtn:hover{
+  color: #ce8a21;
+  background: transparent;
+}
+#service-log-buton{
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: right;
+}
+#service-log-buton .signbtn:hover{
+  color: #ce8a21;
+}
+#service-log-buton .signbtn{
+  color: #000000;
+  padding: 12px 30px;
+}
+
+@media(max-width: 910px){
+  .profile-details .profile-section-secondary{
+    flex-direction: column;
   }
+  .profile-details .profile-section-secondary .column{
+    width: 100%;
+  }
+  .profile-details .profile-section-secondary .column .userDetail-bar h4{
+    font-size: 1rem;
+    min-width: 65px;
+  }
+  .profile-details .profile-section-secondary .column .userDetail-bar b{
+    font-size: 1.5rem;
+    width: 15px;
+  }
+  .profile-details .profile-section-secondary .column .userDetail-bar p{
+    font-size: 1rem;
+    min-width: 170px;
+    text-align: center;
+    }
 }
-@media(max-width: 600px){
-  .footer p{
-    font-size: 15px;
+@media(max-width: 385px){
+  #wrapper-citizenProfile{
+    width: fit-content;
   }
 }
