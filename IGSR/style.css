@@ -79,6 +79,7 @@ header .logo img:hover{
 
 /*menu items*/
 header .navigation{
+  position: relative;
   margin-right: 10px;
   width: 60%;
   max-width: 520px;
@@ -386,6 +387,29 @@ hr{
 
 
   /*slide show*/
+  .slider-wrapper {
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for the slider */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set a fixed height for the slider */
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire slider area */
+    display: none; /* Hide all slides initially */
+  }
+  
+  .slide:first-child {
+    display: block; /* Show the first slide */
+  }
 #slide-box{
   flex-direction: row;
   align-items: flex-start;
@@ -443,8 +467,9 @@ hr{
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
-.slider-nav a:hover{
-  transform: scale(1.2);
+.slider-nav a:hover ,
+.slider-nav a.active  {
+  transform: scale(1.5);
 }
 .button-topic{
   width: 100%;
@@ -735,3 +760,49 @@ select{
 }
 
 /*--------------end of singup and login page design------------------------------*/
+
+/* Service drop down list */
+header .navigation .service-box {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position it below the service button */
+  background-color: rgba(255, 255, 255, 0.127);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: max-content;
+  padding: 7px;
+  border-radius: 20px;
+  border: 3px solid #ce8a21;
+  backdrop-filter: blur(10px);
+}
+header .navigation .service-box.active{
+  display: flex;
+}
+
+header .navigation .service-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .navigation .service-box li {
+  text-align: center;
+  padding: 8px 16px;
+  transition: 0.3s ease;
+}
+
+header .navigation .service-box li a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0px;
+}
+
+header .navigation .service-box li:hover {
+  background-color: #ce8a21;
+  color:  #ffffff;
+  border-radius: 20px;
+}
