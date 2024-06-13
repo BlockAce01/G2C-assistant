@@ -587,6 +587,9 @@ hr{
     align-items: center;
     margin: 8px auto;
   }
+  .slider{
+    height: 145px;
+  }
   #slide-box{
     flex-direction: column;
   }

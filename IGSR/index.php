@@ -7,7 +7,6 @@
 <div class="wrapper">
 
     <div class="section" id="slide-box">
-
       <div class="slider-wrapper">
         <div class="slider">
           <img src="images/gov.jpg" class="slide" id="slide-1">
@@ -20,42 +19,41 @@
           <a href="#slide-3" class="nav-link"></a>
         </div>
       </div>
-
-        <div class="section" id="latest-box">
-          <h3 class="button-topic">Latest updates</h3>
-          <div class="updates">
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-            <a class="A-notification" href="">
-              <div class="notification-content">
-                Request for Aswasuma Now!
-              </div>
-              <div class="time-stamp">2024-June-01</div>
-            </a>
-          </div>
+      <div class="section" id="latest-box">
+        <h3 class="button-topic">Latest updates</h3>
+        <div class="updates">
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
+          <a class="A-notification" href="">
+            <div class="notification-content">
+              Request for Aswasuma Now!
+            </div>
+            <div class="time-stamp">2024-June-01</div>
+          </a>
         </div>
+      </div>
     </div>
     <!--end of 1st section-->
 
