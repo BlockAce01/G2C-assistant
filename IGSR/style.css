@@ -737,12 +737,7 @@ select{
 .remember-forgot label input{
   accent-color: #fff;
   margin-right: 3px;
-}
 
-.input-box i{
-  font-size: 500;
-  position: absolute;    
-  margin: 15px 10px;
 }
 .remember-forgot a{
   color: #3050b8b6;
@@ -816,7 +811,7 @@ header .navigation .service-box li:hover {
   border-radius: 20px;
 }
 
-/*profile-page style*/
+/*.......................................profile-page style...................*/
 .profile-details{
   width: 100%;
 }
@@ -865,6 +860,7 @@ header .navigation .service-box li:hover {
 }
 .profile-details .btn-section{
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .signbtn{
   padding: 6px 20px;
