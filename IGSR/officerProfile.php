@@ -10,7 +10,6 @@
   <?php
   include_once 'header.php';
   ?>
-
 <div class="wrapper" id="wrapper-citizenProfile">
   <div id="service-log-buton">
     <a href="officerServices.php" class="signbtn">Service Log</a>
@@ -48,7 +47,6 @@
     </div>
   </div>
 </div>
-  
   <?php
   include_once 'footer.php';
 ?>
